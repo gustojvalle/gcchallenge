@@ -1,0 +1,13 @@
+@import './breakPoints.module.scss';
+
+@mixin medium {
+    @media (min-width: #{$medium-screen}) and (max-width: #{$large-screen}) {
+        @content;
+    }
+}
+
+@mixin largeScreen {
+    @media (min-width: #{$large-screen}) {
+        @content;
+    }
+}
